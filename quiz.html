@@ -5,6 +5,11 @@
     <script type="text/javascript" src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./font-awesome-4.1.0/css/font-awesome.min.css">
+    <style>
+    	.startsHidden{
+    	display:none;
+    	}
+    </style>
   </head>
   <body style="background-color:#000000">
   	<br>
@@ -16,17 +21,17 @@
     		 </div>
     		 <br>
     		<div class="btn-group" data-toggle="buttons">
-  					<label class="btn btn-warning">
-    				<input type="radio" name="options" id="option1"> Option A
+  					<label class="btn btn-warning" id="option1q1">
+    				<input type="radio" name="options"> Option A
  					 </label>
-  					<label class="btn btn-info">
-   					 <input type="radio" name="options" id="option2"> Option B
+  					<label class="btn btn-info" id="option2q1">
+   					 <input type="radio" name="options"> Option B
  					 </label>
 			</div>
     	</div>
       <!-- end 1st question -->
       <!-- 2st question -->
-    	<div class="well">
+    	<div class="well" id="secondQ">
     	<div class="question">
     		 What would you like to do? 
     		 </div>
@@ -57,6 +62,20 @@
 			</div>
     	</div>
     	<!-- end 3rd question -->
+    	<!-- 4th question -->
+    	<div class="well startsHidden" id="obj1">
+    	
+    	</div>
+    	<!-- end 4th question -->
     </div>
+     <script>
+    	$("#option1q1").click(function(){
+    	 $("#obj1").fadeIn("slow");
+    	});
+    	$("#option2q1").click(function(){
+    	 $("#obj1").fadeOut("slow");
+    	});
+    	
+    	</script>
   </body>
 </html>
