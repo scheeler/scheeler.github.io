@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./font-awesome-4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+ <h3 class="text text-center">Question PhoneMaker</h3>	
+ <div class="container">
+   <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+      <span class="sr-only">50% Complete (success)</span>
+    </div>
+  </div>
+</div>
+<div class="spacer">
+  <div class="alert alert-info" role="alert">
+        The following questions will help to determine your phones capabilities
+      </div>
+
+
+
+
+
+
+
+
+ <!-- Start of accordian -->
+ <div class="panel-group" id="accordion">
+  <!-- Question 1 Start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+     <h4 class="panel-title">
+      <a data-toggle="collapse" data-parnt="#accordion" href="#collapseOne">
+        1) Which situation would be less desirable to you?
+      </a>
+    </h4>
+  </div>
+  <div id="collapseOne" class="panel-collapse collapse in">
+    <div class="panel-body">
+    <!-- Build Button1-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q1option1">
+        <input type="radio" name="q1options1"> a.
+      </label>
+      Having my phone die
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q1option2">
+       <input type="radio" name="q1options2"> b.
+     </label>
+     Having to carry arround a battery pack
+   
+   </div>
+   <!-- End of Button3-->
+ </div>
+</div>
+</div>
+<!-- Question 2 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+        2) How much storage would you like?
+      </a>
+    </h4>
+  </div>
+  <div id="collapseTwo" class="panel-collapse collapse">
+    <div class="panel-body">
+      <!-- Build Button1-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q2option1">
+        <input type="radio" name="q2options1"> a.
+      </label>
+      16gb
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q2option2">
+       <input type="radio" name="q2options2"> b.
+     </label>
+     32gb
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q2option3">
+       <input type="radio" name="q2options3"> c.
+     </label>
+     Storage via micro sd card
+   </div>
+   <!-- End of Button3-->
+ </div>
+</div>
+</div>
+<!-- Question 3 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading ">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        3) Is your cellphone your primary camera?
+      </a>
+    </h4>
+  </div>
+  <div id="collapseThree" class="panel-collapse collapse">
+    <div class="panel-body ">
+      <!-- Build Button3-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q3option1">
+        <input type="radio" name="q3options1"> a.
+      </label>
+      Yes
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q3option2">
+       <input type="radio" name="q3options2"> b.
+     </label>
+     No
+   </div>
+   <!-- End of Button3-->
+ </div>
+</div>
+</div>
+<!-- Question 4 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading ">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+        4) Do you plan to post or share the photos you take with your cellphone?
+      </a>
+    </h4>
+  </div>
+  <div id="collapseFour" class="panel-collapse collapse">
+    <div class="panel-body ">
+      <!-- Build Button4-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q4option1">
+        <input type="radio" name="q4options1"> a.
+      </label>
+      Yes
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q4option2">
+       <input type="radio" name="q4options2"> b.
+     </label>
+     No
+   </div>
+   <!-- End of Button4-->
+ </div>
+</div>
+</div>
+<!-- Question 5 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading ">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+        5) My favorite speaker brand is
+      </a>
+    </h4>
+  </div>
+  <div id="collapseFive" class="panel-collapse collapse">
+    <div class="panel-body ">
+      <!-- Build Button5-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q5option1">
+        <input type="radio" name="q5options1"> a.
+      </label>
+      Beats by Dre
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q5option2">
+       <input type="radio" name="q5options2"> b.
+     </label>
+     Bose
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q5option3">
+       <input type="radio" name="q5options3"> c.
+     </label>
+     I will listen on any speakers
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q5option4">
+       <input type="radio" name="q5options4"> d.
+     </label>
+     Is not listed here
+   </div>
+   <!-- End of Button5-->
+ </div>
+</div>
+</div>
+<!-- Question 6 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading ">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+        6) When browsing the internet, you prefer
+      </a>
+    </h4>
+  </div>
+  <div id="collapseSix" class="panel-collapse collapse">
+    <div class="panel-body ">
+      <!-- Build Button6-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q6option1">
+        <input type="radio" name="q6options1"> a.
+      </label>
+      The fastest speeds
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q6option2">
+       <input type="radio" name="q6options2"> b.
+     </label>
+     Anything that works
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q6option3">
+       <input type="radio" name="q6options3"> c.
+     </label>
+     I don't browse the internet 
+   </div>
+   <!-- End of Button6-->
+ </div>
+</div>
+</div>
+<!-- Question 7 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading ">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+        7) What type of screen do you want?
+      </a>
+    </h4>
+  </div>
+  <div id="collapseSeven" class="panel-collapse collapse">
+    <div class="panel-body ">
+      <!-- Build Button4-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q7option1">
+        <input type="radio" name="q7options1"> a.
+      </label>
+      A startard touchscreen
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q7option2">
+       <input type="radio" name="q7options2"> b.
+     </label>
+     An E-Ink display (used in most e-reader's)
+   </div>
+   <!-- End of Button4-->
+ </div>
+</div>
+</div>
+<!-- Question 8 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading ">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+        8) Does seeing tiny lines or pixels on the screen bother you?
+      </a>
+    </h4>
+  </div>
+  <div id="collapseEight" class="panel-collapse collapse">
+    <div class="panel-body ">
+      <!-- Build Button8-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="q8option1">
+        <input type="radio" name="q8options1"> a.
+      </label>
+      Yes!
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q8option2">
+       <input type="radio" name="q8options2"> b.
+     </label>
+     No
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="q8option3">
+       <input type="radio" name="q8options3"> c.
+     </label>
+     I've never noticed that before
+   </div>
+   <!-- End of Button8-->
+ </div>
+</div>
+</div>
+
+<!--DO NOT TOUCH THIS DIV -->
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Modules-->
+<div class="well">
+  <b>Module Stash</b>
+  <br></br>
+<div class="row">
+	<!--Module1-->
+  <div class="col-xs-2 col-md-2 col-lg-2" >
+   <!-- <a href="#" class="thumbnail"> -->
+      <img src="./Resources/Blanks/Module2x2Blank.png" alt="..."  style="width:100%" id="mod1">
+     <!-- </a>  -->
+  </div>
+  <!--Module2-->
+  <div class="col-xs-1 col-md-1 col-lg-1">
+      <img src="./Resources/Blanks/Module1x1Blank.png" alt="..." style="width:100%" id="mod2">
+  </div>
+  <!--Module3 -->
+  <div class="col-xs-1 col-md-1 col-lg-1" >
+      <img src="./Resources/Blanks/Module1x2Blank.png" alt="..." style="width:100%" id="mod3"> 
+  </div>
+  <!--Module4 -->
+  <div class="col-xs-1 col-md-1 col-lg-1">
+      <img src="./Resources/Blanks/Module1x2Blank.png" alt="..." style="width:100%" id="mod4">
+  </div>
+  <!--Module5 -->
+  <div class="col-xs-1 col-md-1 col-lg-1">
+      <img src="./Resources/Blanks/Module1x2Blank.png" alt="..." style="width:100%" id="mod5">
+  </div>    
+      <!--Module6 -->
+  <div class ="row">
+  <div class="col-xs-3 col-md-3 col-lg-3">
+      <img src="./Resources/Blanks/Screen.png" alt="..." style="width:100%" id="mod6">
+  </div>
+
+  </div>
+</div>
+</div>
+</div>
+<br>
+</br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="spacer">
+
+<div class="alert alert-info" role="alert">
+        The following questions will help to determine your phones appearance <p>and can awlays be modified later</p>
+      </div>
+
+<!-- Start of accordian -->
+ <div class="panel-group" id="accordion2">
+  <!-- Question 1 Start -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+     <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#collapse1">
+        1) Do you prefer pictures, patterns, or color?
+      </a>
+    </h4>
+  </div>
+  <div id="collapse1" class="panel-collapse collapse in">
+    <div class="panel-body">
+    <!-- Build Button1-->
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="a2q1option1">
+        <input type="radio" name="a2q1options1"> a.
+      </label>
+      Pictures
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="a2q1option2">
+       <input type="radio" name="a2q1options2"> b.
+     </label>
+     Patterns
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="a2q1option3">
+       <input type="radio" name="a2q1options3"> c.
+     </label>
+     Color
+   </div>
+   <!-- End of Button1-->
+ </div>
+</div>
+</div>
+<!-- Question 2 Start -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+        2) Which do you find the most beautiful?
+      </a>
+    </h4>
+  </div>
+  <div id="collapse2" class="panel-collapse collapse">
+    <div class="panel-body">
+      <!-- Build Button2-->
+      <b> A landscape </b> <br>
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="a2q2option1">
+        <input type="radio" name="a2q2options1"> a.
+      </label>
+      A lush evergreen forest
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="a2q2option2">
+       <input type="radio" name="a2q2options2"> b.
+     </label>
+     A radiaiting desert
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="a2q2option3">
+       <input type="radio" name="a2q2options3"> c.
+     </label>
+     A pristine beach
+   </div>
+
+   <br> <b> A city </b> </br>
+      <div class="btn" data-toggle="buttons">
+       <label class="btn btn-info" id="a2q2option4">
+        <input type="radio" name="a2q2options4"> a.
+      </label>
+      A towering skyscrpaper
+     </div>
+     <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="a2q2option5">
+       <input type="radio" name="a2q2options5"> b.
+     </label>
+     A exotic car
+   </div>
+   <br>
+     <div class="btn" data-toggle="buttons">
+      <label class="btn btn-info" id="a2q2option6">
+       <input type="radio" name="a2q2options6"> c.
+     </label>
+     A street fair
+   </div>
+   <!-- End of Button2-->
+ </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script>
+var performance = 0;
+     //Question1 and Module 1
+     var a = 0;
+     $("#q1option1").click(function(){
+      a = 2;
+      q1();
+      click1();
+    });
+     $("#q1option2").click(function(){
+      a = 1;
+      q1();
+      click1();
+     });
+     
+    //Question2 and module 2
+    var b = 0;
+    $("#q2option1").click(function(){
+     b = 1;
+     q2();
+     click2();
+   });
+    $("#q2option2").click(function(){
+     b = 2;
+     q2();
+     click2();
+   });
+    $("#q2option3").click(function(){
+     b = 3;
+     q2();
+     click2();
+   });
+
+    //Questions3&4 and Module 3
+    var c = 0;
+    var d = 0;
+    $("#q3option1").click(function(){
+     c = 1;
+     q34();
+     click3();
+   });
+    $("#q3option2").click(function(){
+     c = 0;
+     q34();
+     click3();
+   });
+    $("#q4option1").click(function(){
+     d = 1;
+     q34();
+     click4();
+   });
+    $("#q4option2").click(function(){
+     d = 0;
+     q34();
+     click4();
+   });
+
+    //Question5 and Module 4
+    var e = 0;
+    $("#q5option1").click(function(){
+     e = 2;
+     q5();
+     click5();
+   });
+    $("#q5option2").click(function(){
+     e = 3;
+     q5();
+     click5();
+   });
+    $("#q5option3").click(function(){
+     e = 1;
+     q5();
+     click5();
+   });
+    $("#q5option4").click(function(){
+     e = 3;
+     q5();w
+     click5();
+   });
+
+    //Question6 and module 5
+    var f = 0;
+    $("#q6option1").click(function(){
+     f = 3;
+     q6();
+     click6();
+   });
+    $("#q6option2").click(function(){
+     f = 2;
+     q6();
+     click6();
+   });
+    $("#q6option3").click(function(){
+     f = 1;
+     q6();
+     click6();
+   });
+
+    //Questions7&8 and Module 6
+    var g = 0;
+    var h = 0;
+    $("#q7option1").click(function(){
+     g = 2;
+     click7();
+   });
+    $("#q7option2").click(function(){
+     g = 1;
+     click7();
+   });
+    $("#q8option1").click(function(){
+     h = 2;
+     q78();
+     click8();
+   });
+    $("#q8option2").click(function(){
+     h = 1;
+     q78();
+     click8();
+   });
+     $("#q8option3").click(function(){
+     h = 1;
+     q78();
+     click8();
+   });
+
+
+
+    
+    function q1(){
+     if((a == 0)){
+       document.getElementById("mod1").src="./Resources/Blanks/Module2x2Blank.png";
+     }
+     else if((a == 1)){
+       document.getElementById("mod1").src="./Resources/Modules/EconoPlus.png";
+     }
+     else if((a == 2)){
+       document.getElementById("mod1").src="./Resources/Modules/PowerCell.png";
+     }
+   }
+   function q2(){
+     if((b == 0)){
+       document.getElementById("mod2").src="./Resources/Blanks/Module1x1Blank.png";
+     }
+     else if((b == 1)){
+       document.getElementById("mod2").src="./Resources/Modules/StorageVault.png";
+     }
+     else if((b == 2)){
+       document.getElementById("mod2").src="./Resources/Modules/UltraDisk.png";
+     }
+     else if((b == 3)){
+       document.getElementById("mod2").src="./Resources/Modules/FlexStore.png";
+     }
+   }
+   function q34(){
+     if((c == 1)&&(d == 1)){
+       document.getElementById("mod3").src="./Resources/Modules/SupraRezCamera.png";
+     }
+     else if((c == 1) && (d == 0)){
+       document.getElementById("mod3").src="./Resources/Modules/AnyRangeCamera.png";
+     }
+     else if((c == 0) && (d == 1)){
+       document.getElementById("mod3").src="./Resources/Modules/AnyRangeCamera.png";
+     }
+     else if((c == 0) && (d == 0)){
+       document.getElementById("mod3").src="./Resources/Modules/CompactCamera.png";
+     }
+   }
+   function q5(){
+    if((e == 1)){
+       document.getElementById("mod4").src="./Resources/Modules/AudioBoxSpeaker.png";
+     }
+     else if((e == 2)){
+       document.getElementById("mod4").src="./Resources/Modules/BassMasterSpeaker.png";
+     }
+     else if((e == 3)){
+       document.getElementById("mod4").src="./Resources/Modules/HiFiSpeaker.png";
+     }
+
+   }
+   function q6(){
+    if((f == 0)){
+       document.getElementById("mod5").src="./Resources/Blanks/Module1x2Blank.png";
+     }
+     else if((f == 1)){
+       document.getElementById("mod5").src="./Resources/Modules/ReliableCellular.png";
+     }
+     else if((f == 2)){
+       document.getElementById("mod5").src="./Resources/Modules/LightningData.png";
+     }
+     else if((f == 3)){
+       document.getElementById("mod5").src="./Resources/Modules/WebConnect.png";
+     }
+
+   }
+   function q78(){
+    if((g == 0)){
+       document.getElementById("mod6").src="./Resources/Blanks/Screen.png";
+     }
+     else if(( g == 1)){
+       document.getElementById("mod6").src="./Resources/Modules/LumaEInk.png";
+     }
+     else if(( g == 2) && (h == 2)){
+       document.getElementById("mod6").src="./Resources/Modules/UltraHd.png";
+     }
+     else if(( g == 2) && (h == 1)){
+       document.getElementById("mod6").src="./Resources/Modules/Lumiere.png";
+     }
+
+   }
+
+
+   //ClickHandler Functions
+   function click1(){
+     $("#collapseOne").collapse('hide');
+     $("#collapseTwo").collapse('show');
+   }
+   function click2(){
+     $("#collapseTwo").collapse('hide');
+     $("#collapseThree").collapse('show');
+   }
+   function click3(){
+     $("#collapseThree").collapse('hide');
+     $("#collapseFour").collapse('show');
+   }
+   function click4(){
+     $("#collapseFour").collapse('hide');
+     $("#collapseFive").collapse('show');
+   }
+   function click5(){
+     $("#collapseFive").collapse('hide');
+     $("#collapseSix").collapse('show');
+   }
+   function click6(){
+     $("#collapseSix").collapse('hide');
+     $("#collapseSeven").collapse('show');
+   }
+   function click7(){
+     $("#collapseSeven").collapse('hide');
+     $("#collapseEight").collapse('show');
+   }
+   function click8(){
+     $("#collapseEight").collapse('hide');
+     $("#collapse1").collapse('show');
+   }
+
+   
+   </script>
+ </body>
+ </html>

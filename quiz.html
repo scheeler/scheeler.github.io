@@ -15,19 +15,13 @@
   	<br>
    <div class="container">
   <!-- 1st question -->
-    	<div class="well">
+    	<div class="well ">
     	<div class="question">
     		 What would you like to do? 
     		 </div>
     		 <br>
-    		<div class="btn-group" data-toggle="buttons">
-  					<label class="btn btn-warning" id="option1q1">
-    				<input type="radio" name="options"> Option A
- 					 </label>
-  					<label class="btn btn-info" id="option2q1">
-   					 <input type="radio" name="options"> Option B
- 					 </label>
-			</div>
+    		<label> <input type="radio" id="oddsPref" name="oddsPref" value="decimal" /> Decimal</label>
+        <label> <input type="radio" id="oddsPref" name="oddsPref" value="decimal" /> Decimal</label>
     	</div>
       <!-- end 1st question -->
       <!-- 2st question -->
@@ -36,13 +30,17 @@
     		 What would you like to do? 
     		 </div>
     		 <br>
-    		<div class="btn-group" data-toggle="buttons">
-  					<label class="btn btn-warning">
-    				<input type="radio" name="options" id="option1"> Option A
+    		<div class="btn" data-toggle="buttons">
+  					<label class="btn btn-info text-left" >
+    				<input type="radio" id="evenpref" name="other" value="decimal" > A
  					 </label>
+            This is a test
+            <br>
   					<label class="btn btn-info">
-   					 <input type="radio" name="options" id="option2"> Option B
+             <input type="radio" id="evenpref" name="other" value="decimal" /> B
  					 </label>
+           This is also a test
+           <br>
 			</div>
     	</div>
     	<!-- end 2st question -->
@@ -62,18 +60,51 @@
 			</div>
     	</div>
     	<!-- end 3rd question -->
-    	<!-- 4th question -->
-    	<div class="well startsHidden" id="obj1">
-    	
+    <div class="row">
+        <h1>Radio Group #1</h1>
+        <label class="radio-inline">
+          <input name="radioGroup" id="radio1" value="option1" type="radio"> 1
+        </label>
+        <label class="radio-inline">
+          <input name="radioGroup" id="radio2" value="option2" checked="checked" type="radio"> 2
+        </label>
+        <label class="radio-inline">
+          <input name="radioGroup" id="radio3" value="option3" type="radio"> 3
+        </label>
+    </div>
+    <div class="row">
+        <h1>Radio Group #2</h1>
+        <label for="year" class="control-label input-group">Year</label>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input name="year" value="2011" type="radio">2011
+            </label>
+            <label class="btn btn-default">
+                <input name="year" value="2012" type="radio">2012
+            </label>
+            <label class="btn btn-default">
+                <input name="year" value="2013" checked="checked" type="radio">2013
+            </label>
+        </div>  
+    </div>  
+</div>
+    	<!-- Module 1 -->
+    	<div class="well startsHidden" id="module1">
     	</div>
     	<!-- end 4th question -->
     </div>
      <script>
+     var x1 = 0;
+     var x2 = 0;
+     var x3 = 0;
     	$("#option1q1").click(function(){
-    	 $("#obj1").fadeIn("slow");
+    	 $(#"module1").fadeIn("slow");
     	});
     	$("#option2q1").click(function(){
-    	 $("#obj1").fadeOut("slow");
+    	 $("#module1").fadeOut("slow");
+    	});
+    	$("#option2q1").click(function(){
+    		x1 = 1;
     	});
     	
     	</script>
